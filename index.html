@@ -13,8 +13,83 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Vacation Destination WishList</title>
   </head>
+  <!-- This is my body -->
   <body>
-    <!-- Scripts -->
+    <!-- This is my jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container" text-center>
+        <h1 class="title">Vacations Destinations WishList</h1>
+        <p class="lead title">
+          Found exciting places to visit on your next vacation? Use the form
+          below to add them to yiour wishlist
+        </p>
+      </div>
+    </div>
+
+    <!-- This is my form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <form id="output-div">
+            <div class="form-group">
+              <label for="destination name">Destination name</label>
+              <input
+                class="form-control"
+                id="destination"
+                type="text"
+                placeholder="Enter the name of the destination"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input
+                class="form-control"
+                id="location"
+                type="text"
+                placeholder="Where is it located?"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="photo">Photo</label>
+              <input
+                class="form-control"
+                id="photo"
+                type="url"
+                placeholder="Enter an image url of the place"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                class="form-control"
+                id="description"
+                type="text"
+                placeholder="Where is it located?"
+                rows="3"
+              ></textarea>
+            </div>
+            <!-- This is my button -->
+            <button class="button btn btn-primary" id="photo" type="submit">
+              Add to list
+            </button>
+          </form>
+        </div>
+
+        <!-- This is where my form output will be -->
+        <div class="col-md-9">
+          <h4 id="title">Enter destination details</h4>
+          <!-- This div will hold my form output-->
+          <div id="output-div">
+            <!--This is where my output will show up-->
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./scripts.js"></script>
   </body>
 </html>

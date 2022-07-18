@@ -23,7 +23,7 @@
     <!-- This is my jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container" text-center>
-        <h1 class="title">Vacations Destinations WishList</h1>
+        <h1 id="title">Vacations Destinations WishList</h1>
         <p class="lead title">
           Found exciting places to visit on your next vacation? Use the form
           below to add them to yiour wishlist
@@ -35,12 +35,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <form id="output-div">
+          <form id="input-form">
             <div class="form-group">
-              <label for="destination name">Destination name</label>
+              <label for="name">Destination name</label>
               <input
                 class="form-control"
-                id="destination"
+                id="name"
                 type="text"
                 placeholder="Enter the name of the destination"
                 required
@@ -79,7 +79,11 @@
               ></textarea>
             </div>
             <!-- This is my button -->
-            <button class="button btn btn-primary" id="photo" type="submit">
+            <button
+              class="addToList_btn btn btn-primary"
+              id="submit"
+              type="submit"
+            >
               Add to list
             </button>
           </form>
@@ -89,7 +93,7 @@
         <div class="col-md-9">
           <h4 id="title">Enter destination details</h4>
           <!-- This div will hold my form output-->
-          <div id="output-div">
+          <div id="output-container">
             <!--This is where my output will show up-->
           </div>
         </div>
